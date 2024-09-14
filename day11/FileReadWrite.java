@@ -77,25 +77,29 @@ public class FileReadWrite {
 		writeCharsToFile(f);
 		readCharsFromFile(f);
 		
-//		FileInputStream fis=null;
-//		FileOutputStream fos=null;
-//
-//		try	{
-//		fis = new FileInputStream(f);
-//		fos = new FileOutputStream(f);
-//		fos.write('a');
-//		System.out.println((char)fis.read());
-//		}catch (FileNotFoundException e){
-//			e.printStackTrace();
-//		}catch (IOException e){
-//			e.printStackTrace();
-//		}finally {
-//			try {
-//				fis.close();
-//				fos.close();
-//			}
-//		}
-//
-//	}
+		FileInputStream fis=null;
+		FileOutputStream fos=null;
 
-}}
+		try	{
+		fis = new FileInputStream(f);
+		fos = new FileOutputStream(f);
+		fos.write('a');
+		System.out.println((char)fis.read());
+		}catch (FileNotFoundException e){
+			e.printStackTrace();
+		}catch (IOException e){
+			e.printStackTrace();
+		}finally {
+			try {
+				fis.close();
+				fos.close();
+			
+			
+		}catch (IOException e) {
+            e.printStackTrace();
+        }
+	}
+
+
+
+	}}
